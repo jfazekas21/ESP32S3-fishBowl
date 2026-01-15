@@ -4,7 +4,6 @@
  * This is a base project for ESP32S3 using ESP-IDF v5.3
  */
 
-#include <stdio.h>
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "esp_log.h"
