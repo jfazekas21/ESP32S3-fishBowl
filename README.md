@@ -1,5 +1,13 @@
 # ESP32S3-fishBowl
 
+## Configuration
+
+User-facing firmware configuration lives in `CONFIG.md`.
+
+## ESP-IDF recommendation
+
+For production builds, use the latest stable ESP-IDF release. As of Jan 16, 2026, the recommended stable version is `v5.5.2`, and we will keep using this version until it is manually updated. Avoid `master` or pre-release branches for production.
+
 ## Hardware
 
 Hardware artifacts live in `Hardware/`:
@@ -39,3 +47,6 @@ See the schematic PDF in `Hardware/` for the detailed pin map and net names.
   - `IO19` → `USB+`
   - `IO20` → `USB-`
   - USB signals are routed through `U1` (`USBLC6-2SC6`) for protection.
+- UART0:
+  - `IO43` → `TXD0`
+  - `IO44` → `RXD0`
